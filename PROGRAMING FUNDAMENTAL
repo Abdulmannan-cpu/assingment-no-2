@@ -1,0 +1,248 @@
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+
+int main () {
+
+    double num1,num2, result;
+    char operator;
+
+    printf("Enter the first number: ");
+    scanf("%lf", &num1);
+    printf("Emter the second number:");
+    scanf("%lf", &num2);
+    printf("Enter an operator (+,-,*,/):");
+    scanf(" %c", &operator);
+
+    if (operator == '+') {
+        result = num1 + num2;
+        printf("Result: %.2lf + %.2lf  = %.2lf\n", num1, num2, result);
+    } else if (operator == '-') {
+        result = num1 - num2;
+        printf("Result: %.2lf - %.2lf  = %.2lf\n", num1, num2, result);
+    } else if (operator == '*') {
+        result = num1 * num2;
+        printf("Result: %.2lf * %.2lf  = %.2lf\n", num1, num2, result);
+} else if (operator == '/') {
+    if (num2!= 0 ) {
+        result = num1 / num…
+[20:25, 25/10/2024] Qadir  Quest: 1st Number Wala
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h> 
+#include <conio.h>
+void main() {
+    int number;
+
+    printf("Please enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number); 
+    } else {
+        printf("%d is odd.\n", number);  
+    }
+    
+    printf("Press any key to continue ...");
+    getchar();
+    getchar();
+    
+    getch();
+}
+[20:25, 25/10/2024] Qadir  Quest: 2nd Wala
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h> 
+#include <conio.h>
+void main () {
+    int age;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if (age >=18) {
+        printf("You are eligible to vote.\n");
+    } else {
+        printf("You are not eligible to vote.\n");
+    }
+    getch();
+
+}
+[20:25, 25/10/2024] Qadir  Quest: 3rd wala
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+#include <conio.h>
+void main() {
+    
+    int num1, num2, num3;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    int largest;
+
+    if (num1 >= num2) {
+        if (num1 >= num3) {
+            largest = num1;
+        } else {
+            largest = num3; 
+        }
+    } else {
+        if (num2 >= num3) {
+            largest = num2; 
+        } else {
+            largest = num3; 
+        }
+    }
+
+    
+    printf("The largest number is: %d\n", largest);
+
+    getch();
+}
+[20:25, 25/10/2024] Qadir  Quest: 4th wala
+[20:25, 25/10/2024] Qadir  Quest: #include<stdio.h>
+#include<conio.h>
+{
+int main ()
+float celcius=5,fahrenheit;
+fahrenheit = (celcius * 9/5) + 32;
+printf("%f celcius = %f fahrenheit",celcius, fahrenheit);
+getch();
+}
+[20:25, 25/10/2024] Qadir  Quest: 5th wala 1
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+#include <conio.h>
+int main() { 
+float fahrenheit, celsius;
+printf("the temperature in Fahrenheit is 60: ");
+scanf("%f", &fahrenheit);
+
+celsius = (fahrenheit - 32) * 5 / 9;
+
+printf("Temperature in Celsius: %.2f\n", celsius);
+
+getch();
+}
+[20:25, 25/10/2024] Qadir  Quest: 5th wala 2
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+
+int main () {
+
+    float english, history , physics, average;
+    char grade;
+
+    printf("enter the grade for english");
+    scanf(" %f ", &english );
+    
+    printf("enter the grade for history");
+    scanf(" %f ", &history );
+
+    printf("enter the grade for physics");
+    scanf(" %f ", &physics );
+
+    average = (english +  history +  physics  ) / 3;
+    
+    if (grade >= 90 );{
+    grade = 'A+';
+    } if  (average >= 80) {
+    grade = 'A';
+    } else if  (average >= 70) {
+    grade = 'B';
+    } else if (average >= 60) {
+        grade = 'C';
+    } else {
+        grade = 'D';
+    }
+
+    printf("Average Marks ; %.2lf , average");
+    printf("Grade:  %c\n", grade);
+
+    return 0;
+}
+[20:25, 25/10/2024] Qadir  Quest: 6th wala
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+#include <conio.h>
+
+void main() {
+    float totalAmount, finalAmount;
+    float discount;
+
+    printf("Enter the total shopping amount: ");
+    scanf("%f", &totalAmount);
+
+    if (totalAmount > 5000) {
+        discount = 0.20; 
+    } else if (totalAmount >= 3000) {
+        discount = 0.10; 
+    } else {
+        discount = 0.0; 
+    }
+
+    finalAmount = totalAmount - (totalAmount * discount);
+
+    printf("Final amount after discount: %.2f\n", finalAmount);
+
+    getch();
+}
+[20:25, 25/10/2024] Qadir  Quest: 7th wala
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+
+
+int main() {
+    int year;
+
+    printf("Enter the year: ");
+    scanf("%d", &year);
+
+
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        printf("%d is a leap.\n", year);
+    } else {
+        printf("%d is not a leap year.\n", &year);
+    }
+    
+    printf("Press Enter to exit...");
+    getchar();
+    getchar();
+
+    return 0;
+}
+[20:25, 25/10/2024] Qadir  Quest: 8th Wala
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+
+int main () {
+
+    float principal, rate, time, simpleInterest;
+
+
+    printf ("Enter the principal amount: ");
+    scanf("%f", &principal);
+    
+    printf("Enter the rate of interest (in percentage):");
+    scanf("%f", &rate);
+    
+    printf("Enter the time period (in years): ");
+    scanf("%f", &time);
+
+    simpleInterest = (principal * rate * time) / 100;
+
+    printf("The Simple Interest is : %.2f\n", simpleInterest);
+
+    return 0;
+}
+[20:25, 25/10/2024] Qadir  Quest: 9th wala
+[20:25, 25/10/2024] Qadir  Quest: #include <stdio.h>
+#include <string.h>
+
+int main() {
+
+    char username[20];
+    char password[20];
+
+    printf("Enter Username: ");
+    scanf("%19s", username);
+    printf("Enter Password: ");
+    scanf("%19s", password);
+
+    if (strcmp(username, "admin")==0 && strcmp(password,"1234")==0) {
+        printf("Login Successful\n");
+    } else {
+        printf("Login Failed\n");
+    }
+    return 0;
+
+}
